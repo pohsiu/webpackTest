@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack/webpack.config.js && npx babel src/server --out-dir dist && node dist/server",
     "start": "webpack-dev-server --mode development --config webpack/webpack.config.js --open --hot --history-api-fallback --env.PLATFORM=local --env.VERSION=stag",
-    "dev": "webpack-dev-server --mode development --config webpack.config.js --open --hot --history-api-fallback"
+    "dev": "webpack-dev-server --mode development --config webpack/webpack.config.js --open --hot --history-api-fallback"
   },
   "author": "",
   "license": "ISC",
