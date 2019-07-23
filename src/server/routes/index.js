@@ -1,11 +1,9 @@
 const path = require('path');
 const router = require('express').Router();
+const express = require('express');
 
-// router.get('*', (req, res) => {
-//   const route = path.join(__dirname, '..', '..', '../dist', 'index.html');
-//   res.sendFile(route);
-// });
-
+const distPath = path.resolve('dist');
+router.get('*', express.static(path.join(distPath, 'frontend')));
 router.get('/calendar', (req, res) => {
   res.json({ result: 200 });
 })
