@@ -61,7 +61,7 @@ module.exports = env => {
       entry: ['@babel/polyfill', SERVER_DIR],
       output: {
         path: path.join(__dirname, '../dist/server'),
-        filename: '[name].bundle.js'
+        filename: 'index.js'
       },
       target: 'node',
       // node: {
